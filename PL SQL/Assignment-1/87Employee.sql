@@ -4,7 +4,7 @@ drop table employee;
 
 CREATE TABLE employee(
     empno NUMBER PRIMARY KEY,
-    ename VARCHAR2(20),
+    ename VARCHAR2(20), --importantly use varchar2 only
     sal NUMBER,
     managerNo NUMBER,
     dname VARCHAR2(20),
