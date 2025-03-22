@@ -36,7 +36,7 @@ class Car extends MotorVehicle {
     }
 }
 
-class q1{
+public class q1{
     public static void main(String[] args) {
         Car myCar = new Car("Sedan", 1546, 255000.54, 0.30);
         myCar.display();
