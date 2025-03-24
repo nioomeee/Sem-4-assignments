@@ -1,6 +1,6 @@
 -- Create a procedure to find maximum no from 3 no’s. Numbers should be entered by the
 -- user at run time.
-CREATE OR REPLACE PROCEDURE find_maximum (num1 NUMBER, num2 NUMBER, num3 NUMBER)
+CREATE OR REPLACE PROCEDURE find_maximum (num1 IN NUMBER, num2 IN NUMBER, num3 IN NUMBER)
 IS
     max_num NUMBER := 0;
 BEGIN
