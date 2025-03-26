@@ -1,5 +1,6 @@
 // Write a program to calculate the area of circle, Rectangle & Square by using interface.
 import java.util.Scanner;
+
 interface Area {
     double calculateArea();
 }

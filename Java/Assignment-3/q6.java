@@ -25,7 +25,7 @@ class Book {
 }
 
 class Textbook extends Book {
-    private int gradeLevel;
+    int gradeLevel;
 
     public int getGrade() {
         return gradeLevel;
