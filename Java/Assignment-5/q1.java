@@ -21,11 +21,11 @@ class Thread2 extends Thread{
     public void run() {
         while(true) {
             System.out.println("Thread 2");
-            try {
-                Thread2.sleep(4000);
-            } catch(Exception e) {
-                System.out.println("exception thread1");;
-            }
+        try {
+            Thread2.sleep(4000);
+        } catch(Exception e) {
+            System.out.println("exception thread1");;
+        }
         }
     }
 }
