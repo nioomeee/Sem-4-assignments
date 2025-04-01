@@ -88,6 +88,7 @@ public:
         } else {
             return search(root->right, target);
         }
+        return false;
     }
     
 };
