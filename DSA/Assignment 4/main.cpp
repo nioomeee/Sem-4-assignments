@@ -74,6 +74,22 @@ public:
 
         return max(root->data, max(leftmax, rightmax));
     }
+
+    //search in binary tree
+    bool search(Node* root, int target) {
+        if(root == NULL) {
+            return false;
+        }
+        if(root->data == target) {
+            return true;
+        }
+        if(target < root->data) {
+            return search(root->left, target);
+        } else {
+            return search(root->right, target);
+        }
+    }
+    
 };
 
 int main(){
