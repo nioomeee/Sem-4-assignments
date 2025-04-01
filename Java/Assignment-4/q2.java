@@ -1,35 +1,32 @@
-// Write a java program which takes 2 arguments - a string and its length. If the length of
-// the string is not according to given one then throw the user defined
-// LengthMatchException and handles it appropriately. 
 import java.util.Scanner;
-
-class LengthMatchException extends Exception{
-    public LengthMatchException(String message) {
-        super(message);
+class leghtmatch extends Exception{
+    public leghtmatch(String len){
+        super(len);
     }
+
 }
-public class q2 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+public class q2{
+    public static void main(String[] args){
+        Scanner sc= new Scanner(System.in);
+        System.out.print("enter string:");
+        String str= sc.nextLine();
+        System.out.print("enter length:");
+        int legth= sc.nextInt();
 
-        System.out.print("Enter a string: ");
-        String str = sc.nextLine();
-
-        System.out.print("Enter length of the string: ");
-        int len = sc.nextInt();
-
-        try {
-            if(str.length() != len) {
-                throw new LengthMatchException("Length of the string doesn't match the entered length");
+        try{
+            if(str.length()!=legth){
+                throw new leghtmatch("doesn't match");
+            } else {
+                System.out.println("Match");
             }
-
-            System.out.println("String = " + str);
-            System.out.println("Expected length = " + len);
-        } catch (LengthMatchException e){
-            System.out.println("Error: " + e.getMessage());
-        } finally {
+        }
+        catch(leghtmatch e){
+            System.out.println(e.getMessage());
+        }
+        finally{
             sc.close();
         }
-   
+        
+
     }
 }
