@@ -3,7 +3,7 @@
 import java.applet.Applet;
 import java.awt.*;
 
-public class q9 extends Applet {
+public class Q9StarApplet extends Applet {
 
     @Override
     public void paint(Graphics g) {
@@ -12,9 +12,9 @@ public class q9 extends Applet {
         int nPoints = 2;
 
         g.setColor(Color.YELLOW);
-        g.fillPolygon(xPoints, yPoints, 10);
+        g.fillPolygon(xPoints, yPoints, nPoints);
 
         g.setColor(Color.BLACK);
-        g.drawPolygon(xPoints, yPoints, 10);
+        g.drawPolygon(xPoints, yPoints, nPoints);
     }
 }
