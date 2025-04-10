@@ -4,7 +4,7 @@
 class thread1 extends Thread {
     @Override
     public void run() {
-        for(int i = 1; i <= 50; i+=2) {
+        for(int i = 1; i <= 10; i+=2) {
             System.out.print(i + " ");
             try {
                 thread1.sleep(500);
@@ -18,7 +18,7 @@ class thread1 extends Thread {
 class thread2 implements Runnable {
     @Override
     public void run() {
-        for(int i = 2; i <= 50; i += 2) {
+        for(int i = 2; i <= 10; i += 2) {
             System.out.print(i + " ");
             try {
                 Thread.sleep(500);
