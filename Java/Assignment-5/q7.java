@@ -16,6 +16,7 @@ class thread extends Thread {
         for(int i = start; i <= end; i ++) {
             sum += i;
         }
+        
         System.out.println("Sum of values from " + start + " to " + end + " = " + sum);
     }
 
